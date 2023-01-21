@@ -33,12 +33,11 @@ for i in range(0,3,2):
 for i<range(0,3,2):
     print(colors[i],end=" ")   
     
-# PASS concept - null operation
+# PASS concept - null operation : without pass for loop will throw exception
 
 for i in colors:
-    pass
-    print(i,end=" ")
-    print("skip")
+    pass    
+
     
 # enumerate concept    
 
@@ -82,6 +81,26 @@ del.my_first[0] # it will also not work
 my_first.upper()
 my_first.isalpha()
 my_first.isalnum() # it returns true as alpha and num anyone existence is fine.
+
+# E.g 
+
+a = "hegggglo abc     "
+a.find('l')  # Answer is 6 - it is giving index position
+a.find('z')  # answer will be -1 not any 0 or Exception occurs
+
+a.strip()  
+#a = "hegggglo abc     "
+#a.strip()
+#Out[14]: 'hegggglo abc'
+
+# for removing left space "lstrip" and for right sapce is "rstrip"
+
+my_s = "#####ab#c####"
+my_s.strip('#')   # answer will be ab#c
+
+
+
+
 
 
 
